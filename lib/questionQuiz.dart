@@ -6,10 +6,10 @@ class QuestionQuiz extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-          Question("Pregunta 1"),  
-          Answer("Respuesta 0"),
-          Answer("Respuesta 1"),
-          Answer("Respuesta 2"),
+          Question("De que color es el caballo blanco de simon"),  
+          Answer("Blanco"),
+          Answer("Rojo"),
+          Answer("Negro"),
     ]);
   }
 }
