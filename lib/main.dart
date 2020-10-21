@@ -1,32 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/questionQuiz.dart';
 
-void main(){
-  runApp(MaterialApp(title: 'Qiz app', home:QuizApp(),));
+void main() {
+  runApp(MaterialApp(
+    title: 'Qiz app',
+    home: QuizApp(),
+  ));
 }
 
-class QuizApp extends StatelessWidget{
+class QuizApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Qizz App'),
-      ),
-      body: Column(
-       children:[ 
-        RaisedButton(
-          child: Text('Respuesta 1'),
-          onPressed: (){},
+        appBar: AppBar(
+          title: Text('Qizz App'),
         ),
-        RaisedButton(
-          child: Text('Respuesta 2'),
-          onPressed: (){},
-        ),
-        RaisedButton(
-          child: Text('Respuesta 3'),
-          onPressed: (){},
-        )
-       ])
-    );
+        body: Container(
+          width: double.infinity,
+          child: QuestionQuiz()
+        ));
   }
 }
-
