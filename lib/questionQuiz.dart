@@ -7,7 +7,7 @@ class QuestionQuiz extends StatelessWidget{
   Widget build(BuildContext context) {
     return Column(children: [
           Question("De que color es el caballo blanco de simon"),  
-          Answer("Blanco oscuro"),
+          Answer("Blanco claro"),
           Answer("Rojo"),
           Answer("Negro"),
     ]);
